@@ -35,7 +35,7 @@ Route::group(['middleware' => ['auth']], function () {
     
     Route::group(['prefix' => 'microposts/{id}' ], function() {
         Route::post('add', 'UserFavoriteController@store')->name('micropost.add');
-        Route::delete('anadd', 'UserFollowController@destroy')->name('micropost.unadd');
+        Route::delete('unadd', 'UserFavoriteController@destroy')->name('micropost.unadd');
 
     });
     
