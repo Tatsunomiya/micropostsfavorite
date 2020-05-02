@@ -20,12 +20,13 @@
 
                     @endif
                 </div>
+                <div>
                 
                               @include('user_follow.faborite_button', ['micropost' => $micropost])
 
                 
                 
-                
+                </div>
             </div>
         </li>
 
